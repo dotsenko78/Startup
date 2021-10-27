@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.568)), url(https://kfund.github.io/web-front-end/lesson10/assets/images/background.png) no-repeat;
+    background-size: cover;
+    
+}
+.container {
+    width: 80%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    
+    
+}
+.header-inner {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.header-top {
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    display: flex;
+}
+.welcome {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+.header-top-left {
+    width: 30%;
+    height: 25px;
+    margin-right: 10px;
+}
+.header-top-right {
+    width: 70%;
+    height: 25px;
+    justify-content: end;
+    display: flex;
+
+}
+h2 {
+    color: rgb(252, 249, 249);
+}
+h2:hover {
+    font-size: 30px;
+}
+a {
+    color: rgb(255, 255, 254);
+}
+li {
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 20px 0 0;
+    list-style-type: none;
+}
+a:hover {
+    font-size: 20px;
+}
+h1 {
+    color: rgb(248, 245, 245);
+    justify-content: center;
+}
+p {
+    color: rgb(253, 250, 250);
+    margin-top: 20px;
+}
+ul {
+    display: flex;
+}
+.bottom {
+    color: rgb(248, 245, 245);
+    border: 1px solid white;
+    border-radius: 1px;
+    text-decoration: none;
+    margin-top: 55px;
+    font-size: 20px;
+    padding: 15px;
+}
+.bottom:hover {
+    background-color: rgb(243, 240, 240);
+    color: rgb(218, 49, 20);
+}
+.main {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(252, 252, 252);
+}
+.main-inner {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.main-inner-top {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+
+}
+.main-inner-bottom {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.small {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.round {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(80, 78, 78);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.round i {
+    font-size: 40px;
+    color: rgb(187, 38, 12);
+    font-weight: bold;
+}
+.round:hover {
+    background-color: rgb(204, 43, 15);
+    border: rgb(192, 9, 9);
+}
+.round:hover i{
+    color: rgb(254, 255, 255);
+}
+.zag {
+    color: rgb(28, 29, 29);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.text {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mini {
+    color: rgb(26, 25, 25);
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(189, 33, 13);
+}
+.footer-inner {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-top {
+    width: 25%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: row;
+}
+.krug {
+    width: 35px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: rgb(250, 245, 245);
+}
+.krug:hover {
+    background-color: rgb(253, 251, 251);
+    color: rgb(224, 28, 14);
+    border: 1px solid rgb(253, 253, 251);
+}
+.polos {
+    width: 80px;
+    height: 2px;
+    background-color: #000;
+    margin-top: 15px;
+}
+.mini {
+    color: rgb(15, 15, 15);
+}
+.slovo {
+    font-size: 30px;
+    color: rgb(46, 46, 46);
+    text-transform: uppercase;
+}
+.tex {
+    color: rgb(24, 24, 24);
+}
+.footer-bottom {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and ( max-width: 767px) {
+    .header-top-right {
+        display: none;
+    }
+    .header-top-left {
+        margin: 0 auto;
+    }
+    .welcome h1 {
+        text-align: center;
+    }
+    .main-inner-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        height: 1100px;
+    }
+    .small {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .footer-top {
+        width: 80%;
+    }
+    .footer-bottom {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
